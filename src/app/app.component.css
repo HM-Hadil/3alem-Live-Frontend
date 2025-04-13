@@ -1,0 +1,181 @@
+/* styles pour la première partie de la page d'accueil */
+
+/* Styles généraux */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #f0f7ff;
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar-brand {
+  letter-spacing: -1px;
+}
+
+.navbar-brand sup {
+  top: -0.8em;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero-section {
+  padding: 50px 0 100px;
+  background-color: #f0f7ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Avatars et statistiques */
+.hero-content .rounded-circle {
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.ms-n2 {
+  margin-left: -10px;
+}
+
+/* Section de recherche */
+.search-section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-light {
+  background-color: #f3f4f6;
+  border-color: #f3f4f6;
+}
+
+.tag {
+  font-size: 0.85rem;
+}
+
+.btn-close {
+  font-size: 0.6rem;
+}
+
+/* Cercles décoratifs */
+.hero-image {
+  position: relative;
+}
+
+
+
+.circle-1 {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 220, 40, 0.6); /* Jaune */
+  top: 15%;
+  right: 20%;
+
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(37, 99, 235, 0.2); /* Bleu clair */
+  bottom: 30%;
+  right: 5%;
+  
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-3 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(37, 99, 235, 0.4); /* Bleu moyen */
+  bottom: 15%;
+  left: 20%;
+ 
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-4 {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(37, 99, 235, 0.15); /* Bleu très clair */
+  top: 40%;
+  left: 5%;
+
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Élément décoratif en forme de plus */
+.decorative-plus {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .search-section {
+    flex-direction: column;
+  }
+
+  .selected-tags {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .decorative-plus {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    padding: 30px 0 70px;
+  }
+
+  
+}
