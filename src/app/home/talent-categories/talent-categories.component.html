@@ -1,0 +1,45 @@
+<section class="talent-categories py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-5">Parcourir les talents par catégorie</h2>
+
+    <div class="row">
+      @for (category of categories.slice(0, 3); track $index) {
+      <div class="col-lg-4 mb-4" >
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5>{{category.title}}</h5>
+            <div class="d-flex align-items-center">
+              <div class="me-4">
+                <span class="d-block">• {{category.talents}}</span>
+                <span class="small text-muted">Talents</span>
+              </div>
+              <div>
+                <span class="d-block">{{category.skills}} Skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>}
+    </div>
+
+    <div class="row mt-4">
+      @for (category of categories.slice(3, 6); track $index) {
+      <div class="col-lg-4 mb-4" >
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5>{{category.title}}</h5>
+            <div class="d-flex align-items-center">
+              <div class="me-4">
+                <span class="d-block">• {{category.talents}}</span>
+                <span class="small text-muted">Talents</span>
+              </div>
+              <div>
+                <span class="d-block">{{category.skills}} Skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>}
+    </div>
+  </div>
+</section>
